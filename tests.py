@@ -71,8 +71,8 @@ class TestSetGame(unittest.TestCase):
 		dim_maps = [
 			('dims/simple_dim1.json', 3, 1080),
 			('dims/simple_dim2.json', 3, 9801),
-			('dims/simple_dim3.json', 3),
-			('dims/simple_dim4.json', 4)
+			('dims/simple_dim3.json', 3), # not sure how to calculate results a priori
+			('dims/simple_dim4.json', 4)  # not sure how to calculate results a priori
 		]
 
 		for dim in dim_maps:
@@ -102,7 +102,6 @@ class TestSetGame(unittest.TestCase):
 															 	dim[1],
 															 	len(self.sg.dim_map.keys()),
 															 	len(list(self.sg.dim_map.values())[0])))
-
 
 
 if __name__ == '__main__':
