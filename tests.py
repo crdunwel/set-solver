@@ -52,11 +52,6 @@ class TestSetGame(unittest.TestCase):
 		would yield (81*80)/3! = 1080 possible sets. Dividing by 3! is necessary
 		because there are 3!=6 ways to order three items.
 
-		Since the number of possible sets can be defined as (n choose k) where n
-		is the size of the deck (possible combinations) and k is the set size then
-		set solver is O(n^k) as choose formula is n! / (k!(n-k)!) which is a
-		kth-degree polynomial.
-
 		tl;dr
 
 		example 1:

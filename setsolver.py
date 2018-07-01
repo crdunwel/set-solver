@@ -121,7 +121,8 @@ def main():
 		sg.load_dims_from_file(args.dims)
 		sg.make_deck()
 	else:
-		raise Exception('Must input dimensional map or deck file.')
+		sg.load_dims_from_file('test_data/dims/simple_dim1.json')
+		sg.make_deck()
 
 	print(sg.possible_sets(args.choose))
 
