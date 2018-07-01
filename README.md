@@ -10,7 +10,7 @@ No external packages are used.
 
 ## Running
 
-Run `python setsolver.py -h` for a summary of inputs. At minimum you must provide a `--dims` or `--deck` argument which are file paths to valid JSON representing dimensions or a deck. See examples in (test_data directory)[https://github.com/crdunwel/set-solver/tree/master/test_data] for examples of how to format these files. 
+Run `python setsolver.py -h` for a summary of inputs. At minimum you must provide a `--dims` or `--deck` argument which are file paths to valid JSON representing dimensions or a deck. See examples in [test_data directory](https://github.com/crdunwel/set-solver/tree/master/test_data)for examples of how to format these files. 
 
 If a dimensional file is provided then a deck will be generated for all possible combinations of the dimensions.
 
