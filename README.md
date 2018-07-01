@@ -26,7 +26,7 @@ For example, a standard game of set contains 81 cards with 4 dimensions that hav
 
 ## Improvements
 
-The algorithm for validating a possible set can be parallelized for speed up by distributing parts of the possible possible set list to different machines or cores and combining for final results.
+The algorithm for validating a possible set can be parallelized for speed up by distributing parts of the possible set list to different machines or cores and combining for final results.
 
 ## Running the tests
 
