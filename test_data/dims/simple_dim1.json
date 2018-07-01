@@ -1,0 +1,6 @@
+{
+	"color": ["red", "black", "green"],
+	"number": [1, 2, 3],
+	"shape": ["circle", "square", "triangle"],
+	"size": ["small", "medium", "large"]
+}

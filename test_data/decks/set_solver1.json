@@ -1,0 +1,71 @@
+{
+  "dimensions": {
+    "color": [
+      "red",
+      "black",
+      "yellow"
+    ],
+    "number": [
+      1,
+      2,
+      3
+    ],
+    "shape": [
+      "circle",
+      "square",
+      "triangle"
+    ],
+    "shading": [
+      "red",
+      "black",
+      "yellow"
+    ]
+  },
+  "cards": [
+    {
+      "id": 0,
+      "dims": {
+        "color": "red",
+        "number": 3,
+        "shape": "square",
+        "shading": "yellow"
+      }
+    },
+    {
+      "id": 1,
+      "dims": {
+        "color": "red",
+        "number": 3,
+        "shape": "square",
+        "shading": "red"
+      }
+    },
+    {
+      "id": 2,
+      "dims": {
+        "color": "red",
+        "number": 3,
+        "shape": "square",
+        "shading": "black"
+      }
+    },
+    {
+      "id": 3,
+      "dims": {
+        "color": "red",
+        "number": 3,
+        "shape": "square",
+        "shading": "yellow"
+      }
+    },
+    {
+      "id": 4,
+      "dims": {
+        "color": "yellow",
+        "number": 1,
+        "shape": "square",
+        "shading": "red"
+      }
+    }
+  ]
+}

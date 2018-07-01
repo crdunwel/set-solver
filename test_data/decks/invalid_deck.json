@@ -1,0 +1,90 @@
+{
+  "dimensions": {
+    "color": [
+      "red",
+      "black",
+      "yellow",
+      "green",
+      "white"
+    ],
+    "number": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "shape": [
+      "circle",
+      "square",
+      "triangle",
+      "rectangle",
+      "trapazoid"
+    ],
+    "shading": [
+      "red",
+      "black",
+      "yellow",
+      "green",
+      "white"
+    ],
+    "symbol": [
+      "diamond",
+      "spade",
+      "heart",
+      "club"
+    ]
+  },
+  "cards": [
+    {
+      "id": 0,
+      "dims": {
+        "color": "green",
+        "number": 3,
+        "shape": "square",
+        "shading": "yellow",
+        "symbol": "diamond"
+      }
+    },
+    {
+      "id": 1,
+      "dims": {
+        "color": "black",
+        "number": 3,
+        "shape": "circle",
+        "shading": "red",
+        "symbol": "diamond"
+      }
+    },
+    {
+      "id": 2,
+      "dims": {
+        "color": "red",
+        "number": 4,
+        "shape": "square",
+        "shading": "red",
+        "symbol": "spade"
+      }
+    },
+    {
+      "id": 3,
+      "dims": {
+        "color": "white",
+        "number": 2,
+        "shape": "circle",
+        "shading": "black",
+        "symbol": "spade"
+      }
+    },
+    {
+      "id": 4,
+      "dims": {
+        "color": "green",
+        "number": 1,
+        "shape": "square",
+        "shading": "red",
+        "symbol": "arrow"
+      }
+    }
+  ]
+}
