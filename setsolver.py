@@ -48,7 +48,7 @@ class SetGame(object):
 		except ValueError:
 			print('{0} is not a valid json file.'.format(filename))
 
-	def write_deck_to_file(self, filename="deck.json"):
+	def write_deck_to_file(self, filename='deck.json'):
 		with open(filename, 'w+') as f:
 			toWrite = {
 				'dimensions': self.dim_map,
@@ -65,7 +65,7 @@ class SetGame(object):
 					return (c['id'], v)
 		return True
 
-	def load_deck_from_file(self, filename="deck.json"):
+	def load_deck_from_file(self, filename='deck.json'):
 		self.cards = []
 		with open(filename, 'r') as f:
 			deck_data = json.load(f)
@@ -126,5 +126,5 @@ def main():
 
 	print(sg.possible_sets(args.choose))
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()
