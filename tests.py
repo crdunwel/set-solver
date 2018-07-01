@@ -65,8 +65,8 @@ class TestSetGame(unittest.TestCase):
 		(243*242*1)/3! = 9801 valid sets
 		"""
 
-		timer_string = '{0} seconds to solve for {1} cards with set size {2} ' \
-									 'and {2} dimensions containing {3} possible values'
+		timer_string = '{0} seconds to find {1} valid sets for {2} cards with set '\
+									 'size {3} and {4} dimensions containing {5} possible values'
 
 		dim_maps = [
 			('dims/simple_dim1.json', 3, 1080),
@@ -98,6 +98,7 @@ class TestSetGame(unittest.TestCase):
 							raise(Exception('Invalid set found in calculation'))
 
 			print(timer_string.format(elapsed,
+																len(pos_sets),
 															 	len(self.sg.cards),
 															 	dim[1],
 															 	len(self.sg.dim_map.keys()),
