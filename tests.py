@@ -65,24 +65,45 @@ class TestSetGame(unittest.TestCase):
 		(243*242*1)/3! = 9801 valid sets
 		"""
 
-		timer_string = "{0} seconds to solve for {1} cards with {2} dimensions " \
-									 "containing {3} possible values"
+		timer_string = "{0} seconds to solve for {1} cards with set size {2} " \
+									 "and {2} dimensions containing {3} possible values"
 
 		dim_maps = [
 			('dims/simple_dim1.json', 3, 1080),
 			('dims/simple_dim2.json', 3, 9801),
+			('dims/simple_dim3.json', 3),
+			('dims/simple_dim4.json', 4)
 		]
 
 		for dim in dim_maps:
 			self.sg.load_dims_from_file(self.file_path(dim[0]))
 			self.sg.make_deck()
 			start_time = timeit.default_timer()
-			assert(len( self.sg.possible_sets(dim[1])) == dim[2])
+			pos_sets = self.sg.possible_sets(dim[1])
 			elapsed = timeit.default_timer() - start_time
+			if len(dim) == 3:
+				assert(len(pos_sets) == dim[2])
+
+			# verify that each possible set is indeed a set
+			for s in pos_sets:
+				t = {}
+				for i in s:
+					for k, v in self.sg.cards[i].dims.items():
+						if k not in t:
+							t[k] = []
+						t[k].append(v)
+					for k, v in t.items():
+						setlen = len(set(v))
+						if setlen != 1 and setlen != len(v):
+							raise(Exception("Invalid set found in calculation"))
+
 			print(timer_string.format(elapsed,
 															 	len(self.sg.cards),
+															 	dim[1],
 															 	len(self.sg.dim_map.keys()),
 															 	len(list(self.sg.dim_map.values())[0])))
+
+
 
 if __name__ == '__main__':
     unittest.main()

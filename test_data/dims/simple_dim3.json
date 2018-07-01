@@ -2,5 +2,5 @@
 	"color": ["red", "black", "green", "white"],
 	"number": [1, 2, 3, 4],
 	"shape": ["circle", "square", "triangle", "rectangle"],
-	"size": ["small", "medium", "large", "xlarge"],
+	"size": ["small", "medium", "large", "xlarge"]
 }
